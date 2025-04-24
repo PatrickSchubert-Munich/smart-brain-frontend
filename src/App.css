@@ -1,0 +1,17 @@
+#root {
+  max-height: 120vh;
+  width: 100%;
+  overflow: hidden;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.particles {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+}
