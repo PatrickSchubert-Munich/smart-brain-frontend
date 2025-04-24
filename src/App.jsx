@@ -51,7 +51,7 @@ function App() {
 
   const onSubmit = () => {
     setimageUrl(input);
-    fetch("http://localhost:3000/api/clarifai", {
+    fetch("https://smart-brain-backend-knn2.onrender.com/api/clarifai", {
       method: "post",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
@@ -62,7 +62,7 @@ function App() {
       .then((response) => {
         if (response) {
           displayFaceBox(calculateFaceLocation(response));
-          fetch("http://localhost:3000/image", {
+          fetch("https://smart-brain-backend-knn2.onrender.com/image", {
             method: "put",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({

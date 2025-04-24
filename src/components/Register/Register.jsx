@@ -25,7 +25,7 @@ const Register = ({ onChangeRoute, loadUser }) => {
 
   const onSubmitRegister = (event) => {
     event.preventDefault(); // Verhindert das Neuladen der Seite
-    fetch("http://localhost:3000/register", {
+    fetch("https://smart-brain-backend-knn2.onrender.com/register", {
       method: "post",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
